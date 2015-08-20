@@ -1,0 +1,29 @@
+<h1>{{repository.full_name}}</h1>
+
+<div class="circle-container">
+    <div class="circle">
+        <div class="inner-circle">
+            <div class="clearfix">
+                <button type="button" class="btn btn-sm btn-with-count">
+                    <span class="octicon octicon-repo-forked"></span>
+                    Fork
+                </button>
+                <span class="social-count">{{repository.forks_count}}</span>
+            </div>
+            <div class="clearfix">
+                <button type="button" class="btn btn-sm btn-with-count">
+                    <span class="octicon octicon-star"></span>
+                    Star
+                </button>
+                <span class="social-count">{{repository.stargazers_count}}</span>
+            </div>
+            <div class="clearfix">
+                <button type="button" class="btn btn-sm btn-with-count">
+                    <span class="octicon octicon-eye"></span>
+                    Watch
+                </button>
+                <span class="social-count">{{repository.watchers_count}}</span>
+            </div>
+        </div>
+    </div>
+</div>

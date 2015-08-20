@@ -1,0 +1,85 @@
+/* General */
+
+body {
+    background-color: #f7f7f7;
+    margin: 1%;
+    padding: 0;
+}
+
+/**************************/
+/* Repositories list page */
+/**************************/
+
+.repositories-list {
+    margin: 3% 0;
+}
+
+.repositories {
+    padding: 0.5% 1%;
+    border-top: 1px #666666 solid;
+    border-left: 1px #666666 solid;
+    border-right: 1px #666666 solid;
+}
+
+.repositories:last-child {
+    border-bottom: 1px #666666 solid;
+}
+
+/* List with stripes */
+
+.repositories:nth-child(odd) {
+    background-color: rgba(91, 192, 222, 0.5);
+}
+
+.repositories:nth-child(even) {
+    background-color: rgba(240, 173, 78, 0.8);
+}
+
+/***********************/
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/**************************/
+/* Repository detail page */
+/**************************/
+
+/* Block containing the medal */
+.circle-container {
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    min-height: 160px;
+    min-width: 160px;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D9B867;
+    border-radius: 50%;
+}
+
+.inner-circle{
+    margin-top: 7.5%;
+    margin-left: 7.5%;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: #F8CD78;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
