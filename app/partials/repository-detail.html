@@ -1,0 +1,31 @@
+<h1 class="repository-name">{{repository.full_name}}</h1>
+
+<div class="medal-container container">
+    <div class="circle">
+        <div class="mid-circle">
+            <div class="inner-circle">
+                <div class="congratulations">
+                    Bravo <br/> {{repository.owner.login}} 
+                </div>
+                <hr />
+                <div class="statistics">
+                    <div>
+                        <span class="mega-octicon octicon-star"></span>
+                        {{repository.stargazers_count}} stars 
+                    </div>
+                    <div>
+                        <span class="mega-octicon octicon-eye"></span>
+                        {{repository.watchers_count}} watch
+                    </div>
+                    <div>
+                        <span class="mega-octicon octicon-repo-forked"></span>
+                        {{repository.forks_count}} forks
+                    </div>
+                </div>
+                <div class="thumbs">
+                    <img id="thumbs-up" src="images/thumbs-up.png"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

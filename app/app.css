@@ -1,0 +1,199 @@
+/* General */
+
+body {
+    background-color: #ff0000;
+    color: #ffffff;
+    margin: 1%;
+    padding: 0;
+    font-size: 12px;
+}
+
+/**************************/
+/* Repositories list page */
+/**************************/
+
+.repositories-list {
+    margin: 3% 0;
+}
+
+.repositories {
+    padding: 0.5% 1%;
+    border-top: 1px #666666 solid;
+    border-left: 1px #666666 solid;
+    border-right: 1px #666666 solid;
+    background-color: #4f191a;
+}
+
+.repositories:last-child {
+    border-bottom: 1px #666666 solid;
+}
+
+/* List with stripes */
+
+/*.repositories:nth-child(odd) {
+    background-color: rgba(91, 192, 222, 0.5);
+}
+
+.repositories:nth-child(even) {
+    background-color: rgba(240, 173, 78, 0.8);
+}*/
+
+/***********************/
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/**************************/
+/* Repository detail page */
+/**************************/
+
+.repository-name {
+    text-transform: uppercase;
+    margin: 5% 0;
+    text-align: center;
+}
+
+/* Medal */
+
+.medal-container {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    min-height: 160px;
+    min-width: 160px;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4f191a;
+    border-radius: 50%;
+}
+
+.mid-circle {
+    margin-top: 12.5%;
+    margin-left: 12.5%;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+.inner-circle{
+    margin-top: 5%;
+    margin-left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #4f191a;
+    border-radius: 50%;
+}
+
+/* First row */
+
+.congratulations {
+    text-transform: uppercase;
+    font-size: 1.8em;;
+    text-align: center;
+    height: 30%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr {
+    width: 20%;
+    margin: auto;
+    border-color: #ff0000;
+}
+
+/* Second row */
+
+/* Container */
+.statistics {
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/* Items */
+.statistics > div {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.statistics > div:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Icons */
+.mega-octicon {
+    color: #ff0000;
+    display: block;
+    width: 64px;
+    font-size: 64px;
+    margin: auto;
+}
+
+/* Third row */
+
+.thumbs {
+    height: 40%;
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#thumbs-up {
+    height: 60%;
+}
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Medium devices */
+@media (max-width: 767px) {
+    .mega-octicon {
+        width: 32px;
+        font-size: 32px;
+    }
+
+    .congratulations {
+        font-size: 1.2em;
+    }
+
+    .statistics > div {
+        font-size: 1em;
+    }
+}
+
+/* Small devices */
+
+@media (max-width: 479px) {
+    .mega-octicon {
+        width: 16px;
+        font-size: 16px;
+    }
+
+    .congratulations {
+        font-size: 1em;
+    }
+
+    .statistics > div {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,25 @@
+'use strict';
+
+describe('RunningHeroes controllers', function() {
+
+  beforeEach(function(){
+    this.addMatchers({
+      toEqualData: function(expected) {
+        return angular.equals(this.actual, expected);
+      }
+    });
+  });
+
+    beforeEach(module('runningHeroesApp'));
+    beforeEach(module('runningHeroesServices'));
+
+  describe('RepositoriesListCtrl', function(){
+  
+    var scope, ctrl;
+
+    beforeEach(inject(function($controller) {
+      scope = {};
+      ctrl = $controller('RepositoriesListCtrl', {$scope:scope});
+    }));
+  });
+});
